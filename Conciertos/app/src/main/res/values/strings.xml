@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AplicacionConciertos</string>
+    <string name="Titulo">Ingrese los datos del evento</string>
+</resources>

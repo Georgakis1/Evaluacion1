@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorDestacado">#ffcbcb</color>
+    <color name="colorPrimary">#70adb5</color>
+    <color name="colorPrimaryDark">#132743</color>
+    <color name="colorAccent">#407088</color>
+    <color name="colorDestacado2">#a5ecd7</color>
+    <color name="colorWhite">#e8ffff</color>
+</resources>

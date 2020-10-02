@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tituloSize">25sp</dimen>
+    <dimen name="margenTitulo">20dp</dimen>
+    <dimen name="itemSize">20sp</dimen>
+    <dimen name="margenItem">10dp</dimen>
+</resources>

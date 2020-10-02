@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/margenTitulo"
+
+        android:background="@color/colorPrimary"
+        android:textSize="@dimen/tituloSize"
+        android:text="@string/Titulo"
+        android:textAlignment="center"
+
+
+
+        ></TextView>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Nombre Artista:"
+            android:textSize="@dimen/itemSize"
+            android:textColor="@color/colorPrimaryDark"
+
+
+            ></TextView>
+
+        <EditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/nombreTxt"
+
+
+
+            ></EditText>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margenItem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+
+            android:id="@+id/fechaBtn"
+            android:text="Fecha:"
+            android:textSize="@dimen/itemSize"
+
+
+
+            ></Button>
+
+        <EditText
+            android:inputType="date"
+            android:focusable="false"
+            android:maxLines="1"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/fechaTxt"
+            android:hint="FechaTxt"
+
+
+
+
+            ></EditText>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margenItem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+
+        >
+
+        <TextView
+            android:layout_marginTop="@dimen/margenItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+
+            android:text="Genero:"
+            android:textSize="@dimen/itemSize"
+            android:textColor="@color/colorPrimaryDark"
+
+
+            ></TextView>
+        <Spinner
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/generoSpn"
+
+
+
+            ></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margenItem"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+
+            android:text="Valor entrada:"
+            android:textSize="@dimen/itemSize"
+            android:textColor="@color/colorPrimaryDark"
+
+            ></TextView>
+
+        <EditText
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/margenItem"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+
+            android:hint="Valor"
+            android:inputType="number"
+            android:id="@+id/valorTxt"
+            ></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margenItem"
+
+
+        >
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+
+            android:text="Calificacion:"
+            android:textSize="@dimen/itemSize"
+            android:textColor="@color/colorPrimaryDark"
+
+            ></TextView>
+
+        <Spinner
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/calificacionSpn"
+
+
+            ></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+
+        >
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="@dimen/margenItem"
+            android:id="@+id/registrarBtn"
+
+            android:text="Registrar"
+            android:textSize="@dimen/tituloSize"
+            android:background="@color/colorDestacado2"
+
+            ></Button>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Eventos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></ListView>
+
+
+
+
+</LinearLayout>
